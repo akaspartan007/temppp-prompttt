@@ -198,11 +198,11 @@ The interface should communicate professionalism, technical credibility, product
 
 ## Frontend Technology Requirements
 
-Develop the application using lightweight frontend technologies that prioritize portability and maintainability.
+When creating the application, choose lightweight frontend technologies that prioritize portability and maintainability.
 
-* **Required Stack:** HTML5, CSS3, Tailwind CSS CDN (`<script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>`), and Vanilla JavaScript ES6+.
-* **Supporting Tools:** Feather Icons, Google Fonts, and local JSON files.
-* **Prohibited Stack Elements:** Do **NOT** use React, Vue, Angular, Svelte, backend frameworks, bundlers (Vite, Webpack), or Node-based frontend tooling. The project must remain fully static and deployable without compilation steps.
+The necessary stacks are HTML5, CSS3, Tailwind CSS CDN (`<script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>`), and Vanilla JavaScript ES6+.
+Supporting technologies include local JSON files, Google Fonts, and Feather Icons.
+Stack components that are forbidden include React, Vue, Angular, Svelte, backend frameworks, bundlers (Vite, Webpack), and Node-based frontend tools.
 
 ### Required Pages
 
