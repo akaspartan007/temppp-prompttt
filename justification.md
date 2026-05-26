@@ -56,13 +56,13 @@ Response A delivers a production-ready, fully integrated codebase that fulfills 
 
 | Dimension | Response A | Response B |
 |---|:---:|:---:|
-| **D1 — Correctness** | 4.5/5 | 2.5/5 |
-| **D2 — Relevance** | 4.5/5 | 3.5/5 |
-| **D3 — Completeness** | 4.5/5 | 2.0/5 |
-| **D4 — Style & Presentation** | 4.5/5 | 3.0/5 |
-| **D5 — Coherence** | 4.5/5 | 3.0/5 |
-| **D6 — Helpfulness** | 4.5/5 | 2.5/5 |
-| **D7 — Creativity** | 4.0/5 | 2.0/5 |
+| **Correctness** | 4.5/5 | 2.5/5 |
+| **Relevance** | 4.5/5 | 3.5/5 |
+| **Completeness** | 4.5/5 | 2.0/5 |
+| **Style & Presentation** | 4.5/5 | 3.0/5 |
+| **Coherence** | 4.5/5 | 3.0/5 |
+| **Helpfulness** | 4.5/5 | 2.5/5 |
+| **Creativity** | 4.0/5 | 2.0/5 |
 | **Overall** | **4.4 / 5** | **2.6 / 5** |
 
 ---
