@@ -31,10 +31,10 @@ The purpose of the platform is to improve how customers discover and evaluate te
 
 The system must:
 
-* Offer smart discovery tools to minimize friction in discovering products and finding relevant products in a fast time.
-* Provide comparative information side by side for customers to make decisions before they ask for a quotation.
-* Provide responsive interaction patterns and reusable UI systems that enhance usability on desktop, tablet and mobile.
-* Provide a professional and trustworthy online event that will enhance the online brand presence.
+* Offer smart discovery tools to help users locate relevant products quickly.
+* Provide side-by-side comparison before quotation requests.
+* Provide responsive and reusable UI systems across desktop, tablet and mobile.
+* Strengthen professional brand presence and customer trust.
 
 The completed project should function as a commercial-grade frontend showcase platform. All product cards, detail pages, and listings must be generated dynamically using JSON-driven frontend logic. Hardcoded product rendering is prohibited.
 
@@ -65,8 +65,6 @@ Users must be able to:
 
 * Browse category-based product collections through structured catalogue pages that separate teleprompters, laptops, and accessories into intuitive navigation groups.
 * Open dedicated product detail pages where users can review descriptions, specifications, pricing, and additional information without cluttered layouts.
-* Explore visually rich product cards that summarize important information while encouraging deeper product interaction.
-* Move between related products and categories without losing navigation context, helping users continue exploration smoothly.
 * Filter and search products dynamically to reduce browsing effort and improve decision-making efficiency.
 * Submit quotation requests whenever purchase intent or product interest is identified.
 
@@ -117,7 +115,6 @@ Each product listing must include:
 * Technical specifications highlighting key differentiators and purchasing considerations.
 * Pricing information displayed clearly and consistently across the catalogue.
 * Ratings or review indicators that provide social validation.
-* Promotional badges such as “New,” “Best Seller,” or “Featured” to highlight product importance.
 
 Users interacting with product listings must be able to open product pages, add products to comparison directly from listings, and request quotations without navigating through unnecessary interaction layers.
 
@@ -128,10 +125,8 @@ Create a Rule Based AI Product Finder capable of intelligently discovering produ
 The AI finder must:
 
 * Allow natural language input to the system to enable users to describe what they need in their natural or conversational language.
-* Identify category intent or segment intent, which is a user's search intent for laptops, teleprompters, accessories, and/or products.
 * Identify price-based conditions so users can search according to affordability and budget preferences.
 * Detect feature-related keywords that indicate technical requirements or intended use cases.
-* Recognize brand preferences whenever users specify manufacturers or preferred technology providers.
 * Rank and prioritize relevant results rather than displaying unrelated or randomly ordered products.
 * Display recommendations dynamically within a clean and visually understandable UI.
 
@@ -171,25 +166,10 @@ The comparison experience must:
 * Highlight specification differences visually rather than presenting raw text tables alone.
 * Allow users to remove products individually or clear comparison lists completely.
 * **Maximum supported products: 3 products.** This limitation preserves readability and prevents UI clutter.
-* Prevent duplicate comparison entries so the same product cannot appear multiple times.
-* Display validation or feedback messages whenever comparison limits are exceeded.
-* Persist comparison selections using `localStorage` so users do not lose progress during navigation or refresh.
 
 ### Quote and Inquiry System Requirements
 
-Develop a quotation and inquiry workflow that captures customer intent and encourages business communication.
-
-#### Quote Modal Requirements
-
-Implement a reusable quote request modal that can open from product cards, product detail pages, CTA sections, and comparison pages.
-The modal must:
-
-* Animate smoothly during open and close interactions to create a modern user experience.
-* Prevent page confusion by maintaining clear modal focus and interaction hierarchy.
-* Require fields: Name, Email, Phone number, and Inquiry details.
-* Prevent empty form submission, validate email structure, and validate phone number formatting.
-* Display inline validation feedback so users understand errors immediately.
-* Show confirmation feedback and clear form data safely upon successful submission to avoid accidental duplicates.
+* Validate all required fields and display inline error feedback.
 
 #### Contact Page Requirements
 
@@ -292,71 +272,27 @@ The application should prioritize performance, responsiveness, and long-term mai
 The frontend must:
 
 * Load quickly and minimize unnecessary rendering operations so users experience smooth browsing and reduced waiting time.
-
-* Avoid excessive DOM manipulation or deeply nested structures that may degrade rendering performance as product catalogues grow.
-
 * Use lightweight transitions and animations that improve interaction quality without blocking scrolling or navigation.
-
 * Optimize repeated data access patterns to avoid redundant fetch operations and inefficient filtering logic.
-
-* Maintain responsive behavior as new products, categories, and JSON entries are introduced.
-
 The platform should remain optimized for:
-
 * Mobile devices where screen space and performance limitations require efficient rendering.
-
-* Tablet environments where responsive layouts and touch interactions must remain intuitive.
-
 * Desktop environments where denser catalogue layouts and broader navigation experiences may appear.
-
-Performance should be treated as a core engineering requirement rather than a post-development optimization task.
-
 ---
 
 ## Testing Requirements
 
 Perform structured frontend testing before final deployment to ensure functionality, UI consistency, and reliable interaction behavior.
-
 Testing should validate both technical execution and user experience quality.
 
 Required testing includes:
+* Chrome and Firefox rendering
+* Mobile responsiveness
+* Form validation
+* Search and comparison logic
+* Console errors
+* Cross-browser stability
 
-### Chrome Browser Testing
-
-* Perform Chrome testing to validate rendering behavior, JavaScript execution, and primary interaction flows.
-
-* Confirm functionality for search systems, product rendering, chatbot interactions, modal behavior, and comparison logic.
-
-### Firefox Browser Testing
-
-* Perform Firefox testing to ensure layout consistency and styling reliability across browser engines.
-
-* Validate CSS behavior, navigation systems, and dynamic rendering stability.
-
-### Mobile Responsiveness Testing
-
-* Test layouts across mobile screen sizes to confirm responsive behavior and touch-friendly interaction patterns.
-
-* Validate navigation menus, chatbot placement, product grids, and quote modal usability.
-
-### Form Validation Testing
-
-* Test quote and contact forms to ensure validation logic behaves correctly and rejects invalid or incomplete submissions.
-
-* Confirm email validation, phone validation, and confirmation feedback.
-
-### Console and Runtime Testing
-
-* Inspect browser consoles to identify JavaScript errors, missing assets, failed fetch requests, or broken logic.
-
-* The final deployment should not contain unresolved console errors.
-
-### Cross-Browser Verification
-
-* Compare behavior across multiple browsers to identify rendering inconsistencies and interaction differences.
-
-* The application should remain visually stable and functionally reliable across environments.
-
+Final deployment should contain no unresolved runtime errors.
 ---
 
 ## Deployment Requirements
@@ -425,13 +361,3 @@ Deliverables must include:
 The completed system should resemble a commercial IT showcase and quotation platform rather than a classroom prototype or static brochure website.
 
 ---
-
-## Tailwind CDN Configuration Correction
-
-Use the following CDN implementation:
-
-```html
-<script src="https://cdn.tailwindcss.com"></script>
-```
-
-Do not use malformed markdown or mixed hyperlink syntax inside HTML tags.
