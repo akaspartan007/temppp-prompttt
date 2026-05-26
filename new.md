@@ -6,9 +6,9 @@ You are a Frontend Web Developer and Digital Commerce Experience Engineer specia
 
 You have been contracted to design and develop a high-performance, visually engaging, and production-quality frontend platform for a company providing teleprompters, IT products, laptops, and technology accessories.
 
-The project must function as a modern IT product discovery and quotation platform that enables visitors to browse, compare, and explore technical products through an intuitive and professional interface.
+The project should be a contemporary platform for IT product discovery and quotation that will allow visitors to navigate, compare and investigate technical products, and do it with an easy and professional interface.
 
-The platform should not behave like a basic classroom website or static brochure. Instead, it must resemble a lightweight e-commerce product catalogue and business showcase platform designed for real customers and commercial use cases.
+ It should not be a simple classroom web site or brochure. Instead, it must resemble a lightweight e-commerce product catalogue and business showcase platform designed for real customers and commercial use cases.
 
 The website must support a unified customer experience model where individual users and business clients alike can:
 
@@ -27,15 +27,14 @@ The final system should communicate trust, technical expertise, brand profession
 
 Develop a complete multi-page IT Product Discovery and Quote Management Website titled: **Smart E-Commerce Product Discovery & Quote Management System**
 
-The purpose of the platform is to improve how customers discover and evaluate technical products online. The application must function as a frontend-only e-commerce catalogue system that delivers an experience similar to modern e-commerce websites while remaining lightweight and easy to deploy.
+The purpose of the platform is to improve how customers discover and evaluate technical products online.The application should act as a front end only ecommerce catalogue app that provides an experience like a modern ecommerce app; with minimal load, easy deployment and light on the resources.
 
 The system must:
 
-* Present products through visually organized catalogue pages that make technical products easier to browse and understand.
-* Provide intelligent discovery systems that reduce friction during product exploration and help customers locate suitable products quickly.
-* Support side-by-side comparisons so customers can evaluate competing products before requesting quotations.
-* Offer responsive interaction patterns and reusable UI systems that improve usability across desktop, tablet, and mobile devices.
-* Deliver a professional and trustworthy online experience that strengthens the digital brand presence.
+* Offer smart discovery tools to minimize friction in discovering products and finding relevant products in a fast time.
+* Provide comparative information side by side for customers to make decisions before they ask for a quotation.
+* Provide responsive interaction patterns and reusable UI systems that enhance usability on desktop, tablet and mobile.
+* Provide a professional and trustworthy online event that will enhance the online brand presence.
 
 The completed project should function as a commercial-grade frontend showcase platform. All product cards, detail pages, and listings must be generated dynamically using JSON-driven frontend logic. Hardcoded product rendering is prohibited.
 
@@ -49,11 +48,11 @@ The e-commerce platform provides a range of technology products and professional
 * Laptop devices
 * IT accessories and hardware
 
-Customers interacting with the platform may have different browsing intentions. Some users may already know the exact product they want, while others may need recommendations, compare alternatives, explore compatible devices, search within a budget, or request technical guidance.
+There are different intentions of customers interacting with the platform. Depending on the scenario, some users might already be familiar with the product they are searching for, others may need suggestions, product comparisons, device compatibility, monetary searches, or technical assistance.
 
-Because of these varied use cases, the platform must support multiple discovery methods rather than relying on static navigation alone. The website should therefore behave like a smart product discovery system.
+With the many use cases this approach must cater for more than just a fixed navigation. The website should therefore behave like a smart product discovery system.
 
-The visual identity and interaction patterns should communicate reliability, simplicity, technical sophistication, and business credibility. The interface should help reduce information overload and guide users toward informed product decisions.
+The visual identity and interaction should convey reliability, simplicity, technical sophistication and business credibility. The interface should minimize the amount of information overload and lead the user to make well-informed decisions about products.
 
 ---
 
@@ -91,10 +90,10 @@ The interface should visually distinguish professional and portable product use 
 
 The laptop section should support technical comparison and specification-focused browsing. Supported laptop types include:
 
-* **Business laptops:** Optimized for productivity, enterprise work, and professional use cases.
-* **Consumer laptops:** Intended for casual users, personal productivity, and general computing tasks.
+*  **Business Laptop:** Performance Tuned for Productivity, Enterprise Work and Professional Applications.
+* **Consumer Laptop:** For general use, personal productivity and casual users.
 
-Laptop pages should emphasize hardware specifications, performance-related information, pricing visibility, and comparative browsing. Users should be encouraged to compare devices rather than relying solely on isolated product viewing.
+On laptop pages, hardware specifications, performance-related information, pricing visibility, and comparative browsing should all be emphasized. Users should be encouraged to compare devices rather than relying solely on isolated product viewing.
 
 #### 3. IT Products and Accessories
 
@@ -124,12 +123,12 @@ Users interacting with product listings must be able to open product pages, add 
 
 ### AI Product Finder Requirements
 
-Develop a rule-based AI Product Finder that simulates intelligent product discovery without relying on external machine learning services or third-party AI APIs. The purpose of this feature is to help users discover suitable products through conversational or natural-language-style search rather than relying entirely on manual browsing.
+Create a Rule Based AI Product Finder capable of intelligently discovering products without requiring any external machine learning services or third party AI APIs. That's why this feature was introduced to allow the user to find products that might be suitable for them, instead of having to do it by manually searching.
 
 The AI finder must:
 
-* Accept natural language input so users can describe what they need using conversational or everyday language.
-* Detect category intent by identifying whether users are searching for laptops, teleprompters, accessories, or related products.
+* Allow natural language input to the system to enable users to describe what they need in their natural or conversational language.
+* Identify category intent or segment intent, which is a user's search intent for laptops, teleprompters, accessories, and/or products.
 * Identify price-based conditions so users can search according to affordability and budget preferences.
 * Detect feature-related keywords that indicate technical requirements or intended use cases.
 * Recognize brand preferences whenever users specify manufacturers or preferred technology providers.
@@ -137,11 +136,8 @@ The AI finder must:
 * Display recommendations dynamically within a clean and visually understandable UI.
 
 > **Examples of User Queries and Expected Behavior:**
-> * *User Query:* "Laptop under $700" $\rightarrow$ *Expected Result:* Display affordable laptop recommendations sorted by closest matching criteria.
-> * *User Query:* "Wireless mouse for office work" $\rightarrow$ *Expected Result:* Filter accessories matching both category and workflow flags.
+> * *User Query:* "Laptop under $700" $\rightarrow$ *Expected Result:* Show laptop recommendations that are closest to $700 and are affordable.
 > * *User Query:* "Portable teleprompter" $\rightarrow$ *Expected Result:* Directly isolate lightweight teleprompter entries.
-> 
-> 
 
 The AI finder should improve product discovery while remaining fast, explainable, maintainable, and rule-driven. External AI APIs and backend recommendation services are prohibited.
 
@@ -206,7 +202,7 @@ Develop a dedicated Contact Page that strengthens communication and improves com
 
 ### Chatbot Requirements
 
-Develop a rule-based chatbot widget designed to guide users and improve product discovery. The chatbot functions as a lightweight digital assistant rather than a full conversational AI.
+Create a rule-based chatbot widget to assist customers and enhance product discovery. Instead of being a complete conversational AI, the chatbot serves as a lightweight digital assistant.
 
 The chatbot must:
 
