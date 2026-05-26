@@ -31,10 +31,9 @@ The purpose of the platform is to improve how customers discover and evaluate te
 
 The system must:
 
-* Offer smart discovery tools to help users locate relevant products quickly.
-* Provide side-by-side comparison before quotation requests.
-* Provide responsive and reusable UI systems across desktop, tablet and mobile.
-* Strengthen professional brand presence and customer trust.
+* Make intelligent discovery tools available to help customers quickly locate relevant products.
+* Provide a side-by-side comparison prior to obtaining a quote.
+* Provide mobile, tablet, and desktop user interface technologies that are responsive and reusable.* Increase brand awareness and customer confidence.
 
 The completed project should function as a commercial-grade frontend showcase platform. All product cards, detail pages, and listings must be generated dynamically using JSON-driven frontend logic. Hardcoded product rendering is prohibited.
 
@@ -52,8 +51,6 @@ There are different intentions of customers interacting with the platform. Depen
 
 With the many use cases this approach must cater for more than just a fixed navigation. The website should therefore behave like a smart product discovery system.
 
-The visual identity and interaction should convey reliability, simplicity, technical sophistication and business credibility. The interface should minimize the amount of information overload and lead the user to make well-informed decisions about products.
-
 ---
 
 ## Core System Requirements
@@ -63,10 +60,8 @@ The visual identity and interaction should convey reliability, simplicity, techn
 Develop a centralized product showcase experience that organizes products clearly and supports efficient navigation.
 Users must be able to:
 
-* Browse category-based product collections through structured catalogue pages that separate teleprompters, laptops, and accessories into intuitive navigation groups.
-* Open dedicated product detail pages where users can review descriptions, specifications, pricing, and additional information without cluttered layouts.
-* Filter and search products dynamically to reduce browsing effort and improve decision-making efficiency.
-* Submit quotation requests whenever purchase intent or product interest is identified.
+* Use well-organized catalog pages that separate laptops, teleprompters, and accessories into easily navigable sections to explore product collections based on categories.
+* Open specific product detail pages with clear layouts to allow consumers to review features, costs, descriptions, and other details.
 
 All listing data must load dynamically from `data/products.json`. This file functions as the single source of truth and must control catalogue rendering, product metadata, category grouping, and dynamic frontend updates. Manual duplication of product data in HTML is not allowed.
 
@@ -112,8 +107,6 @@ Each product listing must include:
 * Product title and category labels to organize listings clearly.
 * Brand information so customers can identify manufacturers.
 * Short descriptive summaries that communicate product purpose without overwhelming users.
-* Technical specifications highlighting key differentiators and purchasing considerations.
-* Pricing information displayed clearly and consistently across the catalogue.
 * Ratings or review indicators that provide social validation.
 
 Users interacting with product listings must be able to open product pages, add products to comparison directly from listings, and request quotations without navigating through unnecessary interaction layers.
@@ -130,10 +123,6 @@ The AI finder must:
 * Rank and prioritize relevant results rather than displaying unrelated or randomly ordered products.
 * Display recommendations dynamically within a clean and visually understandable UI.
 
-> **Examples of User Queries and Expected Behavior:**
-> * *User Query:* "Laptop under $700" $\rightarrow$ *Expected Result:* Show laptop recommendations that are closest to $700 and are affordable.
-> * *User Query:* "Portable teleprompter" $\rightarrow$ *Expected Result:* Directly isolate lightweight teleprompter entries.
-
 The AI finder should improve product discovery while remaining fast, explainable, maintainable, and rule-driven. External AI APIs and backend recommendation services are prohibited.
 
 ### Live Search Requirements
@@ -147,22 +136,11 @@ Search must:
 * Display live dropdown suggestions that update dynamically while users type.
 * Navigate users directly to product detail pages when search results or suggestions are selected.
 
-> **Examples of Live Search Behavior:**
-> * *Typing:* "tele" $\rightarrow$ *Expected Suggestions:* Studio Teleprompter, Broadcast Teleprompter, Portable Teleprompter
-> * *Typing:* "mouse" $\rightarrow$ *Expected Suggestions:* Wireless Mouse, Gaming Mouse, Bluetooth Mouse
-> 
-> 
-
-Search results should update instantly to reduce friction and encourage exploration.
-
 ### Product Comparison Requirements
 
 Develop a dynamic side-by-side product comparison system that helps users evaluate products more confidently before requesting quotations.
 
 The comparison experience must:
-
-* Allow users to add products directly from product cards or product detail pages without unnecessary navigation.
-* Display specifications and pricing side-by-side so differences become immediately visible and easier to understand.
 * Highlight specification differences visually rather than presenting raw text tables alone.
 * Allow users to remove products individually or clear comparison lists completely.
 * **Maximum supported products: 3 products.** This limitation preserves readability and prevents UI clutter.
@@ -190,14 +168,6 @@ The chatbot must:
 * Include open and close animations that feel modern and non-disruptive.
 * Accept predefined product and navigation queries from users.
 * Return mapped responses that help guide users toward relevant pages or product categories.
-
-> **Example Dialogue:**
-> * *User:* "Show laptops" $\rightarrow$ *Bot:* "Opening laptop catalogue..."
-> * *User:* "Compare products" $\rightarrow$ *Bot:* "Opening comparison dashboard..."
-> 
-> 
-
-Backend chatbot services and AI APIs are prohibited. All chatbot behavior must remain frontend and rule-driven.
 
 ---
 
