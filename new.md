@@ -1,14 +1,14 @@
-# ARS Solutions India: Smart IT Product Discovery & Quote Management System
+# Smart IT Product Discovery & Quote Management System
 
 ## Context and Role
 
 You are a Frontend Web Developer and Digital Commerce Experience Engineer specializing in modern product showcase platforms, responsive web systems, and lightweight e-commerce experiences.
 
-You have been contracted by ARS Solutions India, a company providing teleprompters, IT products, laptops, and technology accessories, to design and develop a high-performance, visually engaging, and production-quality frontend platform.
+You have been contracted to design and develop a high-performance, visually engaging, and production-quality frontend platform for a company providing teleprompters, IT products, laptops, and technology accessories.
 
 The project must function as a modern IT product discovery and quotation platform that enables visitors to browse, compare, and explore technical products through an intuitive and professional interface.
 
-The platform should not behave like a basic classroom website or static brochure. Instead, it must resemble a lightweight product catalogue and business showcase platform designed for real customers and commercial use cases.
+The platform should not behave like a basic classroom website or static brochure. Instead, it must resemble a lightweight e-commerce product catalogue and business showcase platform designed for real customers and commercial use cases.
 
 The website must support a unified customer experience model where individual users and business clients alike can:
 
@@ -25,9 +25,9 @@ The final system should communicate trust, technical expertise, brand profession
 
 ## Objective
 
-Develop a complete multi-page IT Product Discovery and Quote Management Website titled: **ARS Solutions India: Smart IT Product Discovery & Quote Management System**
+Develop a complete multi-page IT Product Discovery and Quote Management Website titled: **Smart E-Commerce Product Discovery & Quote Management System**
 
-The purpose of the platform is to improve how customers discover and evaluate technical products online. The application must function as a frontend-only catalogue system that delivers an experience similar to modern e-commerce websites while remaining lightweight and easy to deploy.
+The purpose of the platform is to improve how customers discover and evaluate technical products online. The application must function as a frontend-only e-commerce catalogue system that delivers an experience similar to modern e-commerce websites while remaining lightweight and easy to deploy.
 
 The system must:
 
@@ -35,7 +35,7 @@ The system must:
 * Provide intelligent discovery systems that reduce friction during product exploration and help customers locate suitable products quickly.
 * Support side-by-side comparisons so customers can evaluate competing products before requesting quotations.
 * Offer responsive interaction patterns and reusable UI systems that improve usability across desktop, tablet, and mobile devices.
-* Deliver a professional and trustworthy online experience that strengthens ARS Solutions India's digital brand presence.
+* Deliver a professional and trustworthy online experience that strengthens the digital brand presence.
 
 The completed project should function as a commercial-grade frontend showcase platform. All product cards, detail pages, and listings must be generated dynamically using JSON-driven frontend logic. Hardcoded product rendering is prohibited.
 
@@ -43,7 +43,7 @@ The completed project should function as a commercial-grade frontend showcase pl
 
 ## Business and User Context
 
-ARS Solutions India provides a range of technology products and professional solutions. The company specializes in:
+The e-commerce platform provides a range of technology products and professional solutions. The company specializes in:
 
 * Teleprompter systems
 * Laptop devices
@@ -79,7 +79,7 @@ The catalogue must support multiple technology categories while preserving clean
 
 #### 1. Teleprompters
 
-The teleprompter section represents a major business offering and should receive professional visual treatment. The teleprompter catalogue must support:
+The teleprompter section represents a major offering and should receive professional visual treatment. The teleprompter catalogue must support:
 
 * **Studio teleprompters:** Designed for professional recording and production environments where screen size and readability are critical.
 * **Broadcast teleprompters:** Intended for media and television workflows where reliability and clarity are essential.
@@ -199,7 +199,7 @@ The modal must:
 
 Develop a dedicated Contact Page that strengthens communication and improves company credibility. The page must include:
 
-* Company information that introduces ARS Solutions India and reinforces business legitimacy.
+* Company information that introduces the brand and reinforces business legitimacy.
 * Contact forms that allow customers to submit inquiries conveniently.
 * Email, phone communication details, and social media links.
 * Optional Google Maps integration to communicate physical business presence.
@@ -227,12 +227,12 @@ Backend chatbot services and AI APIs are prohibited. All chatbot behavior must r
 
 ## UI and Design Requirements
 
-The interface should communicate professionalism, technical credibility, product clarity, and modern digital branding. The design should support both information discovery and business conversion.
+The interface should communicate professionalism, technical credibility, product clarity, and modern e-commerce digital branding. The design should support both information discovery and business conversion.
 
 ### Brand Identity Requirements
 
-* **Brand Name:** ARS Solutions India
-* **Logo Asset:** `images/ARSSolutionsLogo.png`
+* **Brand Name:** E-Commerce IT Showroom
+* **Logo Asset:** `images/Logo.png`
 * **Primary Colors:** Primary Sky Blue (`#0ea5e9`), Secondary Slate (`#64748b`), Deep Dark Blue (`#0f172a`)
 * **Typography:** Body Font: Inter; Heading Font: Poppins
 
