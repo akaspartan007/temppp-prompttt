@@ -289,30 +289,153 @@ All dynamic components must use `fetch()` to parse data from `data/products.json
 
 ---
 
-## Error Handling and Defensive Coding
+### Performance and Scalability Requirements
 
-The website must fail gracefully and avoid broken layouts or unresponsive components. Ensure code accounts for:
+The application should prioritize performance, responsiveness, and long-term maintainability.
 
-* **Missing DOM Elements:** JavaScript modules must check for elements before assigning events to avoid console errors when pages lack specific UI components.
-* **Failed Fetch Requests:** Network drops or missing JSON resources must fallback to reader-friendly UI alerts rather than rendering frozen loaders.
-* **Corrupted Data:** Malformed or incomplete item arrays within the JSON catalog must skip rendering gracefully without stalling the script parsing engine.
-* **localStorage Failures:** The product comparison dashboard must fall back to basic operational states without crashing if the browser restricts storage access.
-* **Broken Image References:** Fallback images or text-labeled containers must replace broken media paths seamlessly to maintain card alignment.
+The frontend must:
 
-Include clear inline programming comments that explain fundamental interaction blocks, routing updates, or validation steps without causing excessive code clutter.
+* Load quickly and minimize unnecessary rendering operations so users experience smooth browsing and reduced waiting time.
+
+* Avoid excessive DOM manipulation or deeply nested structures that may degrade rendering performance as product catalogues grow.
+
+* Use lightweight transitions and animations that improve interaction quality without blocking scrolling or navigation.
+
+* Optimize repeated data access patterns to avoid redundant fetch operations and inefficient filtering logic.
+
+* Maintain responsive behavior as new products, categories, and JSON entries are introduced.
+
+The platform should remain optimized for:
+
+* Mobile devices where screen space and performance limitations require efficient rendering.
+
+* Tablet environments where responsive layouts and touch interactions must remain intuitive.
+
+* Desktop environments where denser catalogue layouts and broader navigation experiences may appear.
+
+Performance should be treated as a core engineering requirement rather than a post-development optimization task.
 
 ---
 
-## Explicit Constraints
+## Testing Requirements
 
-* **Tech Stack Bound:** Use HTML5, CSS3, Tailwind CSS, and Vanilla JavaScript only.
-* **Rendering:** All product displays must remain JSON-driven. Hardcoded HTML listings are banned.
-* **Comparison Limits:** Enforce a maximum threshold of 3 products. Block extra additions with user alerts.
-* **Zero Dependencies:** External AI models, compilation setups, backend routing engines, or framework plugins are strictly prohibited.
-* **Pathing Integrity:** Use relative paths throughout the workspace to guarantee uncompromised performance when deployed over GitHub Pages subdirectories.
+Perform structured frontend testing before final deployment to ensure functionality, UI consistency, and reliable interaction behavior.
+
+Testing should validate both technical execution and user experience quality.
+
+Required testing includes:
+
+### Chrome Browser Testing
+
+* Perform Chrome testing to validate rendering behavior, JavaScript execution, and primary interaction flows.
+
+* Confirm functionality for search systems, product rendering, chatbot interactions, modal behavior, and comparison logic.
+
+### Firefox Browser Testing
+
+* Perform Firefox testing to ensure layout consistency and styling reliability across browser engines.
+
+* Validate CSS behavior, navigation systems, and dynamic rendering stability.
+
+### Mobile Responsiveness Testing
+
+* Test layouts across mobile screen sizes to confirm responsive behavior and touch-friendly interaction patterns.
+
+* Validate navigation menus, chatbot placement, product grids, and quote modal usability.
+
+### Form Validation Testing
+
+* Test quote and contact forms to ensure validation logic behaves correctly and rejects invalid or incomplete submissions.
+
+* Confirm email validation, phone validation, and confirmation feedback.
+
+### Console and Runtime Testing
+
+* Inspect browser consoles to identify JavaScript errors, missing assets, failed fetch requests, or broken logic.
+
+* The final deployment should not contain unresolved console errors.
+
+### Cross-Browser Verification
+
+* Compare behavior across multiple browsers to identify rendering inconsistencies and interaction differences.
+
+* The application should remain visually stable and functionally reliable across environments.
+
+---
+
+## Deployment Requirements
+
+Deploy the project using static hosting infrastructure compatible with frontend-only applications.
+
+Supported deployment targets include:
+
+* GitHub Pages
+* Netlify
+* Other static hosting providers
+
+Deployment must:
+
+* Use relative paths so assets, navigation systems, and scripts remain functional across hosting environments.
+
+* Avoid server-side dependencies, backend routing, or compilation pipelines.
+
+* Remain deployable without bundlers, build tools, or backend configuration.
+
+Expected deployment examples:
+
+```text
+https://username.github.io
+https://goldenresponsetraining.netlify.app
+```
+
+After deployment validate:
+
+* Navigation links
+* Product rendering
+* Search systems
+* Comparison persistence
+* Quote modal behavior
+* Chatbot interactions
+* Responsive layouts
+
+Deployment should represent a stable and production-ready frontend experience rather than a partially functional prototype.
 
 ---
 
 ## Output Expectations
 
-Deliver complete, production-grade, highly responsive web assets mapped neatly to the architectural blueprint. Code blocks must provide ready-to-run functionality, clear visual formatting, and complete architectural parity across every specified frontend system.
+The final solution must deliver a production-quality frontend experience that aligns with the architectural blueprint and business requirements.
+
+Deliverables must include:
+
+* A multi-page responsive website supported by shared navigation and reusable UI components.
+
+* JSON-driven catalogue rendering that supports maintainable and scalable product architecture.
+
+* A functional live search system with autocomplete suggestions and cross-page accessibility.
+
+* A rule-based AI Product Finder that supports natural-language-style product discovery.
+
+* A dynamic product comparison dashboard supporting side-by-side evaluation workflows.
+
+* A quotation workflow with reusable modal interactions, validation logic, and confirmation feedback.
+
+* A lightweight chatbot system that guides users toward navigation paths and product discovery.
+
+* Modular JavaScript architecture with reusable logic, maintainable code structure, and clear separation of concerns.
+
+* Production-ready deployment compatible with GitHub Pages, Netlify, or equivalent static hosting infrastructure.
+
+The completed system should resemble a commercial IT showcase and quotation platform rather than a classroom prototype or static brochure website.
+
+---
+
+## Tailwind CDN Configuration Correction
+
+Use the following CDN implementation:
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+```
+
+Do not use malformed markdown or mixed hyperlink syntax inside HTML tags.
